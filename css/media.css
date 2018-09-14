@@ -1,0 +1,31 @@
+@media screen and (max-width: 1048px) {
+	body {
+		width: 90%;
+		margin: 2em 5%;
+	}
+}
+
+@media screen and (max-width: 780px) {
+	section {
+		flex: 0 1 49%;
+	}
+}
+
+@media screen and (max-width: 650px) {
+	section {
+		flex: 0 1 100%;
+	}
+
+	.logo {
+		display: block;
+		margin: auto;
+	}
+
+	.titulo {
+		font-size: 2em;
+		float: initial;
+		margin: auto;
+		display: block;
+		text-align: center;
+	}
+}

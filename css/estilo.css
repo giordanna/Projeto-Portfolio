@@ -3,15 +3,19 @@
 }
 body {
 	width: 1024px;
-	margin: 1em auto;
+	margin: 2em auto;
+}
+
+header {
+	width: 100%;
 }
 
 hr {
 	border: none;
 	color: #7d97ad;
 	background: #7d97ad;
-	padding: 0.25em 0.25em 0 0;
-	margin: 2em 0 2em 0;
+	padding: 0.25em 0.25em 0;
+	margin: 2em 0;
 }
 
 h1,
@@ -37,40 +41,42 @@ h3 {
 	text-transform: capitalize;
 }
 
+section {
+	flex: 0 1 32%;
+	text-align: center;
+	color: #2d3c49;
+	margin-bottom: 1em;
+}
 
-.header-interno {
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
+section img {
+	width: 100%;
+}
+
+a {
+	font: 500 12pt Helvetica, Arial, sans-serif;
+	text-decoration: none;
+	color: inherit;
+}
+
+.logo {
+	vertical-align: top;
+}
+
+.titulo {
+	text-transform: uppercase;
+	font-size: 2em;
+	margin: 0.625em 0 0 0;
+	display: inline-block;
+	float: right;
+	color: #212121;
+	text-align: right;
 }
 
 .figure-destaque {
 	margin: 0 0 2em 0;
 }
 
-.logo {
-  vertical-align: top;
-}
-
 .destaque {
-	width: 100%;
-}
-
-.titulo {
-  text-transform: uppercase;
-  font-size: 2em;
-  margin: 0.625em 0 0 0;
-  display: inline-block;
-  float: right;
-  color: #212121;
-  text-align: right;
-}
-
-.clearfix {
-  overflow: auto;
-}
-
-article {
 	width: 100%;
 }
 
@@ -80,25 +86,9 @@ article {
 	margin: 0.5em;
 }
 
-/* créditos pelo layout dos itens: https://getflywheel.com/layout/flexbox-create-modern-card-design-layout/ */
+/* consultado: https://getflywheel.com/layout/flexbox-create-modern-card-design-layout/ */
 .section-itens {
 	display: flex;
-   justify-content: space-between;
-}
-
-section {
-	flex: 0 1 32%;
-	text-align: center;
-	color: #2d3c49;
-
-}
-
-section img {
-	width: 100%;
-}
-
-a {
-	font: 500 10pt Helvetica, Arial, sans-serif;
-	text-decoration: none;
-	color: inherit;
+	flex-wrap: wrap;
+	justify-content: space-between;
 }
