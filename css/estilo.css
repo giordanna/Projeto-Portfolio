@@ -4,6 +4,7 @@
 body {
 	width: 1024px;
 	margin: 2em auto;
+	background: #eee;
 }
 
 header {
@@ -12,8 +13,7 @@ header {
 
 hr {
 	border: none;
-	color: #7d97ad;
-	background: #7d97ad;
+	background: #c52c2c;
 	padding: 0.25em 0.25em 0;
 	margin: 2em 0;
 }
@@ -24,7 +24,7 @@ h3,
 h4 {
 	text-transform: uppercase;
 	font: normal 500 2em Helvetica, Arial, sans-serif;
-	color: #2d3c49;
+	color: #313234;
 	padding: 0;
 	margin: 0;
 }
@@ -44,7 +44,7 @@ h3 {
 section {
 	flex: 0 1 32%;
 	text-align: center;
-	color: #2d3c49;
+	color: #313234;
 	margin-bottom: 1em;
 }
 
@@ -53,13 +53,25 @@ section img {
 }
 
 a {
-	font: 500 12pt Helvetica, Arial, sans-serif;
 	text-decoration: none;
 	color: inherit;
 }
 
+span {
+	font: 500 12pt Helvetica, Arial, sans-serif;
+	color: inherit;
+}
+
+footer {
+	font: normal 100 12pt Roboto, Helvetica, Arial, sans-serif;
+	text-align: center;
+	color: #5e6a7a;
+	margin: 2em 0;
+}
+
 .logo {
 	vertical-align: top;
+	height: 150px;
 }
 
 .titulo {
@@ -68,7 +80,7 @@ a {
 	margin: 0.625em 0 0 0;
 	display: inline-block;
 	float: right;
-	color: #212121;
+	color: #313234;
 	text-align: right;
 }
 
@@ -81,7 +93,7 @@ a {
 }
 
 .titulo-trabalhos {
-	color: #7d97ad;
+	color: #c52c2c;
 	font-weight: inherit;
 	margin: 0.5em;
 }
