@@ -1,14 +1,32 @@
 * {
 	box-sizing: border-box;
 }
+
 body {
 	width: 1024px;
 	margin: 2em auto;
 	background: #eee;
 }
 
+/* Header */
 header {
 	width: 100%;
+}
+
+.logo {
+	vertical-align: top;
+	height: 150px;
+}
+
+/* Alinha o título na direita, centraliza-o com a logo */
+.titulo {
+	text-transform: uppercase;
+	font-size: 2em;
+	margin: 0.625em 0 0;
+	display: inline-block;
+	float: right;
+	color: #313234;
+	text-align: right;
 }
 
 hr {
@@ -18,6 +36,7 @@ hr {
 	margin: 2em 0;
 }
 
+/* TODO: refatorar cabeçalhos, atender ao http://udacity.github.io/frontend-nanodegree-styleguide/css.html#type-selectors */
 h1,
 h2,
 h3,
@@ -37,19 +56,51 @@ h2 {
 	font-size: 0.75em;
 }
 
+/* Imagem de banner */
+.banner {
+	width: 100%;
+	margin: 0 0 2em 0;
+}
+
+/* Trabalhos em destaque */
+.trabalhos {
+	color: #c52c2c;
+	font-weight: inherit;
+	margin: 0.5em;
+}
+
 h3 {
 	text-transform: capitalize;
 }
 
-section {
+/*
+	consultado: https://getflywheel.com/layout/flexbox-create-modern-card-design-layout/
+*/
+.itens {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+/*
+	consultado: https://css-tricks.com/animating-border/
+	e: https://www.w3schools.com/css/css3_transitions.asp;
+*/
+.item {
 	flex: 0 1 32%;
 	text-align: center;
 	color: #313234;
-	margin-bottom: 1em;
+	background: transparent;
+	transition: background 0.1s ease-out;
+	padding: 0.5em;
 }
 
-section img {
-	width: 100%;
+.item:hover {
+	background: rgba(0, 0, 0, 0.2);
+}
+
+.miniatura {
+	width: 100%;  
 }
 
 a {
@@ -57,50 +108,15 @@ a {
 	color: inherit;
 }
 
-span {
+p {
 	font: 500 12pt Helvetica, Arial, sans-serif;
 	color: inherit;
 }
 
+/* Footer */
 footer {
 	font: normal 100 12pt Roboto, Helvetica, Arial, sans-serif;
 	text-align: center;
 	color: #5e6a7a;
 	margin: 2em 0;
-}
-
-.logo {
-	vertical-align: top;
-	height: 150px;
-}
-
-.titulo {
-	text-transform: uppercase;
-	font-size: 2em;
-	margin: 0.625em 0 0 0;
-	display: inline-block;
-	float: right;
-	color: #313234;
-	text-align: right;
-}
-
-.figure-destaque {
-	margin: 0 0 2em 0;
-}
-
-.destaque {
-	width: 100%;
-}
-
-.titulo-trabalhos {
-	color: #c52c2c;
-	font-weight: inherit;
-	margin: 0.5em;
-}
-
-/* consultado: https://getflywheel.com/layout/flexbox-create-modern-card-design-layout/ */
-.section-itens {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
 }

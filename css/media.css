@@ -6,16 +6,14 @@
 }
 
 @media screen and (max-width: 780px) {
-	section {
+	/* Trabalhos em destaque */
+	.item {
 		flex: 0 1 49%;
 	}
 }
 
 @media screen and (max-width: 650px) {
-	section {
-		flex: 0 1 100%;
-	}
-
+	/* Header */
 	.logo {
 		display: block;
 		margin: auto;
@@ -27,5 +25,31 @@
 		margin: auto;
 		display: block;
 		text-align: center;
+	}
+
+	/* Trabalhos em destaque */
+	.item {
+		flex: 0 1 100%;
+	}
+}
+
+@media screen and (max-width: 400px) {
+	/* Header */
+	.logo {
+		height: 100px;
+	}
+
+	.titulo {
+		font-size: 1.5em;
+	}
+
+	/* Trabalhos em destaque */
+	.trabalhos {
+		font-size: 1.25em;
+		text-align: center;
+	}
+
+	h4 {
+		font-size: 1.5em;
 	}
 }
