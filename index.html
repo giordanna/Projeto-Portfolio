@@ -23,8 +23,17 @@
 
 	<hr>
 
-	<!-- TODO: adicionar srcset nos elementos img para prover imagens otimizadas -->
-	<img class="banner" src="img/servicos-header.jpg" alt="imagem de destaque do site, mostrando código e um vetor">
+	<!-- consultado: https://developer.mozilla.org/pt-BR/docs/Aprender/HTML/Multimedia_and_embedding/Responsive_images -->
+	<img class="banner"
+		srcset="img/servicos-header-320.jpg 320w,
+				img/servicos-header-480.jpg 480w,
+				img/servicos-header-800.jpg 800w,
+				img/servicos-header-2000.jpg 2000w"
+		sizes="(max-width: 320px) 280px,
+				(max-width: 480px) 440px,
+				(max-width: 800px) 760px,
+				840px"
+		src="img/servicos-header-2000.jpg" alt="imagem de destaque do site, mostrando código e um vetor">
 
 	<article>
 		<h2 class="trabalhos">Trabalhos em destaque</h2>
@@ -33,7 +42,14 @@
 		<div class="itens">
 			<section class="item">
 				<a href="https://github.com/giordanna/Movie-Trailers" target="_blank">
-					<img class="miniatura" src="img/projeto-movies.jpg" alt="miniatura do projeto de trailer de filmes">
+					<img class="miniatura"
+						srcset="img/projeto-movies-320.jpg 320w,
+								img/projeto-movies-480.jpg 480w,
+								img/projeto-movies-800.jpg 800w"
+						sizes="(max-width: 320px) 280px,
+								(max-width: 480px) 440px,
+								800px"
+						src="img/projeto-movies-800.jpg" alt="miniatura do projeto de trailer de filmes">
 
 					<h3>Movie Trailers</h3>
 					<p>github.com/giordanna/movie-trailers</p>
@@ -42,7 +58,14 @@
 
 			<section class="item">
 				<a href="https://github.com/giordanna/Projeto-Portfolio" target="_blank">
-					<img class="miniatura" src="img/projeto-portfolio.jpg" alt="miniatura do projeto do portfólio">
+					<img class="miniatura"
+						srcset="img/projeto-portfolio-320.jpg 320w,
+								img/projeto-portfolio-480.jpg 480w,
+								img/projeto-portfolio-800.jpg 800w"
+						sizes="(max-width: 320px) 280px,
+								(max-width: 480px) 440px,
+								800px"
+						src="img/projeto-portfolio-800.jpg" alt="miniatura do projeto do portfólio">
 
 					<h3>Portfolio</h3>
 					<p>github.com/giordanna/projeto-portfolio</p>
@@ -51,7 +74,14 @@
 
 			<section class="item">
 				<a href="https://github.com/giordanna/mosaico-fractal-web" target="_blank">
-					<img class="miniatura" src="img/projeto-mosaico.jpg" alt="miniatura do projeto mosaico fractal web">
+					<img class="miniatura"
+						srcset="img/projeto-mosaico-320.jpg 320w,
+								img/projeto-mosaico-480.jpg 480w,
+								img/projeto-mosaico-800.jpg 800w"
+						sizes="(max-width: 320px) 280px,
+								(max-width: 480px) 440px,
+								800px"
+						src="img/projeto-mosaico-800.jpg" alt="miniatura do projeto mosaico fractal web">
 
 					<h3>Mosaico Fractal</h3>
 					<p>github.com/giordanna/mosaico-fractal-web</p>
